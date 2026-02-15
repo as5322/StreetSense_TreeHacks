@@ -1,0 +1,47 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.route-input {
+  color: #22c55e !important; /* text colour */
+}
+
+.route-input::placeholder {
+  color: rgba(255,255,255,0.5);
+  opacity: 1;
+}
+
+/* Fix Chrome autofill overriding colour */
+.route-input:-webkit-autofill,
+.route-input:-webkit-autofill:hover,
+.route-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #22c55e !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.summary-panel {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.25) transparent;
+}
+
+/* Chrome, Edge, Safari */
+.summary-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.summary-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.summary-panel::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.25);
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.summary-panel::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.45);
+}
